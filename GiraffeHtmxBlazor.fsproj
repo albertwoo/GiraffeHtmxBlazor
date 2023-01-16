@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="UI\Utils.fs" />
+		<Compile Include="UI\Components\Layout.fs" />
+		<Compile Include="UI\Components\Products.fs" />
+		<Compile Include="UI\Components\ProductEditor.fs" />
+		<Compile Include="UI\Components\StocksView.fs" />
+		<Compile Include="UI\Pages\Dashboard.fs" />
+		<Compile Include="UI\Pages\Index.fs" />
+		<Compile Include="UI/Routes.fs" />
+		<Compile Include="Startup.fs" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Fun.Blazor.CustomElements" Version="3.0.0-beta004" />
+		<PackageReference Include="Fun.Blazor.HotReload" Version="3.0.0-beta002" />
+		<PackageReference Include="Fun.Blazor.Server" Version="3.0.0-beta002" />
+		<PackageReference Include="Fun.Htmx" Version="3.0.0-beta002" />
+		<PackageReference Include="Giraffe" Version="6.0.0" />
+	</ItemGroup>
+
+</Project>

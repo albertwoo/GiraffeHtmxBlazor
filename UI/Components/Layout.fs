@@ -4,13 +4,11 @@ open Fun.Blazor
 
 type Layout =
 
-    static member Create (?headerAttrs: AttrRenderFragment, ?bodyNode: NodeRenderFragment) =
-        fragment {
+    static member Create (?headerNode: NodeRenderFragment, ?bodyNode: NodeRenderFragment) =
+        html.fragment [
             doctype "html"
             html' {
                 head {
-                    title { "GiraffeHtmxBlazor" }
-                    //defaultArg headerAttrs (AttrRenderFragment(fun _ _ i -> i))
                     baseUrl "/"
                     meta { charset "utf-8" }
                     meta {
@@ -19,6 +17,7 @@ type Layout =
                     }
                     stylesheet "tailwind-generated.css"
                     CustomElement.lazyBlazorJs ()
+                    defaultArg headerNode (title { "GiraffeHtmxBlazor" })
                 }
                 body {
                     nav {
@@ -46,4 +45,4 @@ type Layout =
                     script { src "https://unpkg.com/htmx.org@1.8.4" }
                 }
             }
-        }
+        ]

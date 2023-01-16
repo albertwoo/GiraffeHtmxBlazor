@@ -42,9 +42,6 @@ type Dashboard =
             }
 
         Layout.Create(
-            headerAttrs = domAttr {
-                title' "Dashboard"
-                asAttrRenderFragment
-            },
+            headerNode = title { "Dashboard" },
             bodyNode = node
         )

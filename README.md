@@ -1,22 +1,11 @@
-This is a server side blazor app
+# Giraffe + Htmx + Fun.Blazor
 
-App.fs contains UI logic
+How to run:
 
-Index.fs is for creating the index template. You can think it as index.html
+	dotnet fsi buil.fsx -- -p dev
 
-Startup.fs is for hooking up everything and configuring server
+## Dev requirements
 
+- ndoejs + pnpm
+- dotnet SDK 7
 
-## Dev with hot-reload
-
-    Open terminal and run
-    dotnet run
-
-    Open terminal and run
-    fun-blazor watch .\FunServer.fsproj
-
-    > This required 'dotnet tool install --global Fun.Blazor.Cli --version 2.1.*'
-    
-## Dev without hot-reload
-
-    dotnet watch run

@@ -15,6 +15,7 @@
 		<Compile Include="Startup.fs" />
 	</ItemGroup>
 	<ItemGroup>
+		<PackageReference Include="Fun.Blazor" Version="3.0.0-beta004" />
 		<PackageReference Include="Fun.Blazor.CustomElements" Version="3.0.0-beta004" />
 		<PackageReference Include="Fun.Blazor.HotReload" Version="3.0.0-beta002" />
 		<PackageReference Include="Fun.Blazor.Server" Version="3.0.0-beta002" />

@@ -13,10 +13,10 @@ type Products =
             }
             for i in 1..5 do
                 div {
-                    class' "px-5 py-1 cursor-pointer"
-                    hxGet $"ui-comp/product-editor/{i}"
-                    hxTrigger hxEvt.mouse.click
+                    hxGet $"view/product-editor/{i}"
                     hxTarget "#product-editor"
+                    hxTrigger hxEvt.mouse.click
+                    class' "px-5 py-1 cursor-pointer"
                     $"product-{i}"
                 }
             div { id "product-editor" }

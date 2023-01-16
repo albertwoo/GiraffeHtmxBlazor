@@ -1,12 +1,11 @@
 {
     "tailwindCSS.includeLanguages": {
-        "razor": "html"
+        "fsharp": "html"
     },
     "tailwindCSS.experimental.classRegex": [
-        "class'[^\n]*\n",
-        "Class([^\n]*)\""
+        "class'[^\"]*\"([^\n]*)\n",
+        "classString[\\s]*=[^\"]*\"([^\n]*)\n"
     ],
-    "tailwindCSS.experimental.configFile": "LEGODesign/tailwind.config.js",
     "css.validate": false,
     "editor.quickSuggestions": {
         "strings": true

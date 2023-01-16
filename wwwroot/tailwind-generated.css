@@ -882,6 +882,12 @@ html {
   outline-offset: 2px;
 }
 
+.mockup-phone .display {
+  overflow: hidden;
+  border-radius: 40px;
+  margin-top: -25px;
+}
+
 .modal-open .modal-box,
 .modal-toggle:checked + .modal .modal-box,
 .modal:target .modal-box {
@@ -1070,6 +1076,10 @@ html {
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {

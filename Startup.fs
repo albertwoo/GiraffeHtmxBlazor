@@ -6,19 +6,20 @@ open Microsoft.Extensions.DependencyInjection
 open Giraffe
 open GiraffeHtmxBlazor.UI.Components
 
-
 let builder = WebApplication.CreateBuilder(Environment.GetCommandLineArgs())
+let services = builder.Services
 
-builder.Services.AddControllersWithViews()
-builder.Services.AddHttpContextAccessor()
-builder.Services.AddServerSideBlazor(fun options ->
+services.AddControllersWithViews()
+services.AddServerSideBlazor(fun options ->
     options.RootComponents.RegisterCustomElementForFunBlazor<StocksView>()
 )
-builder.Services.AddFunBlazorServer()
-builder.Services.AddGiraffe()
+services.AddFunBlazorServer()
+services.AddGiraffe()
 
 
 let app = builder.Build()
+
+app.UseResponseCaching()
 
 app.UseStaticFiles()
 

@@ -26,7 +26,7 @@ type Layout =
                             a {
                                 class' "text-primary text-lg font-medium"
                                 href ""
-                                "Demo App"
+                                "GiraffeHtmxBlazor"
                             }
                             div { class' "flex-grow" }
                             a {

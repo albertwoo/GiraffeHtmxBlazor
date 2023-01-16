@@ -6,6 +6,5 @@ How to run:
 
 ## Dev requirements
 
-- ndoejs + pnpm
+- nodejs + pnpm (for tailwindcss)
 - dotnet SDK 7
-

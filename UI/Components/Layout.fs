@@ -9,40 +9,37 @@ type Layout =
             doctype "html"
             html' {
                 head {
+                    chartsetUTF8
                     baseUrl "/"
-                    meta { charset "utf-8" }
-                    meta {
-                        name "viewport"
-                        content "width=device-width, initial-scale=1.0"
-                    }
+                    viewport "width=device-width, initial-scale=1.0"
                     stylesheet "tailwind-generated.css"
                     CustomElement.lazyBlazorJs ()
                     defaultArg headerNode (title { "GiraffeHtmxBlazor" })
                 }
                 body {
                     nav {
-                        class' "flex items-center gap-3 container mx-auto p-2"
+                        class' "flex items-center gap-3 container mx-auto py-2"
                         childContent [
                             a {
-                                class' "text-primary text-lg font-medium"
                                 href ""
+                                class' "text-primary text-lg font-medium"
                                 "GiraffeHtmxBlazor"
                             }
                             div { class' "flex-grow" }
                             a {
-                                class' "link link-primary"
                                 href ""
+                                class' "link link-primary"
                                 "Home"
                             }
                             a {
-                                class' "link link-primary"
                                 href "dashboard"
+                                class' "link link-primary"
                                 "Dashboard"
                             }
                         ]
                     }
                     defaultArg bodyNode (NodeRenderFragment(fun _ _ i -> i))
-                    script { src "https://unpkg.com/htmx.org@1.8.4" }
+                    script { src "https://unpkg.com/htmx.org@1.8.5" }
                 }
             }
         ]

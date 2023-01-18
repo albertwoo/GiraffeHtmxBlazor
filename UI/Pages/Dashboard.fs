@@ -17,7 +17,6 @@ type Dashboard =
                     }
                     div {
                         hxGet "view/products"
-                        hxTarget_this
                         hxTrigger (HxTrigger(hxEvt.load, delayMs = 2000))
                         class' "my-5"
                         childContent [

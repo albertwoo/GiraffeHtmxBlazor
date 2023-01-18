@@ -8,7 +8,7 @@ type Products =
     static member Create () =
         div.create [
             h2 { 
-                class' "text-2xl font-medium"
+                class' "text-xl font-medium"
                 "Prodution (Loaded async, powered by htmx)" 
             }
             for i in 1..5 do
@@ -16,7 +16,7 @@ type Products =
                     hxGet $"view/product-editor/{i}"
                     hxTarget "#product-editor"
                     hxTrigger hxEvt.mouse.click
-                    class' "px-5 py-1 cursor-pointer"
+                    class' "px-5 py-1 my-1 cursor-pointer rounded bg-slate-100 hover:bg-slate-300"
                     $"product-{i}"
                 }
             div { id "product-editor" }

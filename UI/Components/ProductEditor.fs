@@ -7,6 +7,7 @@ type ProductEditor =
 
     static member Create (productId: int) =
         div {
+            id "product-editor-dialog"
             class' "modal modal-open"
             div {
                 class' "modal-box"
@@ -24,8 +25,9 @@ type ProductEditor =
                         childContent [
                             button {
                                 hxGet "view/empty"
-                                hxTarget "#product-editor"
+                                hxTarget "#product-editor-dialog"
                                 hxTrigger hxEvt.mouse.click
+                                hxSwap_delete
                                 class' "btn"
                                 "Close"
                             }

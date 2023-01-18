@@ -22,7 +22,7 @@ let private stocksView =
             
         div.create [
             h2 { 
-                class' "text-2xl font-medium"
+                class' "text-xl font-medium"
                 "Stock status (Rendered in real time, powered by blazor server custom elements)"
             }
             adaptiview () {

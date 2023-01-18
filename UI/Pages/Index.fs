@@ -9,7 +9,7 @@ type Index =
     static member Create() =
         Layout.Create(
             bodyNode = div {
-                class' "container mx-auto p-10"
+                class' "container mx-auto py-5"
                 h1 {
                     class' "text-primary text-center font-medium"
                     "This is a demo app, just for try to mix Giraffe, htmx, Fun.Blazor"

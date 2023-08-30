@@ -2,7 +2,7 @@
 
 How to run:
 
-	dotnet fsi buil.fsx -- -p dev
+	dotnet fsi build.fsx -- -p dev
 
 ## Dev requirements
 

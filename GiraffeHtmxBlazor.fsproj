@@ -15,12 +15,12 @@
 		<Compile Include="Startup.fs" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Fun.Blazor" Version="3.0.0-beta007" />
-		<PackageReference Include="Fun.Blazor.CustomElements" Version="3.0.0-beta004" />
-		<PackageReference Include="Fun.Blazor.HotReload" Version="3.0.0-beta002" />
-		<PackageReference Include="Fun.Blazor.Server" Version="3.0.0-beta002" />
-		<PackageReference Include="Fun.Htmx" Version="3.0.0-beta003" />
-		<PackageReference Include="Giraffe" Version="6.0.0" />
+		<PackageReference Include="Fun.Blazor" Version="3.0.3" />
+		<PackageReference Include="Fun.Blazor.CustomElements" Version="3.0.0" />
+		<PackageReference Include="Fun.Blazor.HotReload" Version="3.0.0" />
+		<PackageReference Include="Fun.Blazor.Server" Version="3.0.1" />
+		<PackageReference Include="Fun.Htmx" Version="3.0.0" />
+		<PackageReference Include="Giraffe" Version="6.2.0" />
 	</ItemGroup>
 
 </Project>

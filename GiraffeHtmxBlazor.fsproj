@@ -16,7 +16,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Fun.Blazor" Version="3.0.3" />
-		<PackageReference Include="Fun.Blazor.CustomElements" Version="3.0.0" />
+		<PackageReference Include="Fun.Blazor.CustomElements" Version="3.0.1" />
 		<PackageReference Include="Fun.Blazor.HotReload" Version="3.0.0" />
 		<PackageReference Include="Fun.Blazor.Server" Version="3.0.1" />
 		<PackageReference Include="Fun.Htmx" Version="3.0.0" />
